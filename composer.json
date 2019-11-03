@@ -6,7 +6,9 @@
     "require": {
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
-        "drupal/core": "self.version"
+        "drupal/core": "self.version",
+        "drupal/page_manager": "^4.0",
+        "drupal/panelizer": "^4.1"
     },
     "require-dev": {
         "behat/mink": "1.7.x-dev",

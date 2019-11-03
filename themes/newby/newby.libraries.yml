@@ -1,0 +1,7 @@
+global:
+  version: 1.0.0
+  css:
+    base:
+      css/newby.css: {}
+  js:
+    js/newby.js: {}

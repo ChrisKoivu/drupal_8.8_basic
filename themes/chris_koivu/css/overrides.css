@@ -1,0 +1,23 @@
+#block-chris-koivu-branding,
+#block-chris-koivu-main-menu,
+#block-chris-koivu-account-menu
+{
+    float:left;
+}
+
+
+
+.header div img {
+    padding:8px 16px;
+}
+
+.region-highlighted.panel.callout{
+    border:none;
+}
+
+@media only screen and (min-width: 640px)  {
+    .header div {
+        display:flex;
+        align-items: center;
+    }
+}

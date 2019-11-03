@@ -1,0 +1,17 @@
+.header-left, .header-center, .header-right{
+    float: left;
+}
+
+.block-newby-account-menu.block.block-menu.navigation.menu--account {
+    padding: 56px 0 0;
+}
+
+.account-menu {
+    float:right;
+}
+
+/* hidden elements  */
+.region-highlighted, .menu-toggle{
+    display:none;
+}
+
