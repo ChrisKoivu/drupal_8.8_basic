@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\layout_builder\Plugin\Layout;
+namespace Drupal\ck_layouts\Plugin\Layout;
 
 /**
  * Configurable three column layout plugin class.
@@ -8,14 +8,15 @@ namespace Drupal\layout_builder\Plugin\Layout;
  * @internal
  *   Plugin classes are internal.
  */
-class ThreeColumnLayout extends MultiWidthLayoutBase {
+class ThreeColumnFlexLayout extends MultiWidthLayoutBase {
 
   /**
    * {@inheritdoc}
    */
   protected function getWidthOptions() {
     return [
-      'small-3 small-6 small-3' => '25%/50%/25%',
+      // outer wrapper css class is key of array, value is label for config form
+      '25-50-25' => 'small-3/small-6/small-3',
       '33-34-33' => '33%/34%/33%',
       '25-25-50' => '25%/25%/50%',
       '50-25-25' => '50%/25%/25%',

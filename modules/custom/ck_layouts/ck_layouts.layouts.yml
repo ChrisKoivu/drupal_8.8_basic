@@ -2,8 +2,8 @@ layout_twocol_section:
   label: 'Two column'
   path: layouts/twocol_section
   template: layout--twocol-section
-  library: layout_builder/twocol_section
-  class: '\Drupal\layout_builder\Plugin\Layout\TwoColumnLayout'
+  library: layouts/twocol_section
+  class: '\Drupal\ck_layouts\Plugin\Layout\TwoColumnLayout'
   category: 'Columns: 2'
   default_region: first
   icon_map:
@@ -15,11 +15,11 @@ layout_twocol_section:
       label: Second
 
 layout_threecol_section:
-  label: 'Three column'
+  label: 'CK Three column Flex Layout'
   path: layouts/threecol_section
   template: layout--threecol-section
-  library: layout_builder/threecol_section
-  class: '\Drupal\layout_builder\Plugin\Layout\ThreeColumnLayout' 
+  library: layouts/threecol_section
+  class: '\Drupal\ck_layouts\Plugin\Layout\ThreeColumnFlexLayout'
   category: 'Columns: 3'
   default_region: second
   icon_map:
@@ -36,7 +36,7 @@ layout_fourcol_section:
   label: 'Four column'
   path: layouts/fourcol_section
   template: layout--fourcol-section
-  library: layout_builder/fourcol_section
+  library: layouts/fourcol_section
   category: 'Columns: 4'
   default_region: first
   icon_map:

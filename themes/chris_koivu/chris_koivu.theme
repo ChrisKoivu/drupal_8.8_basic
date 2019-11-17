@@ -37,13 +37,15 @@ function STARTER_preprocess_node(&$variables) {
  */
 function chris_koivu_preprocess_page_title(&$variables) {
      $node = \Drupal::routeMatch()->getParameter('node');
-     $nid = $node->id();
-     $show_page_title = (bool)($node->get('field_show_page_title')->getString());
-     $node_type = $node->load($nid)->getType();
-
-     if($node && $node_type === 'layout_page' && !$show_page_title){
-        $variables['title']="";       
-     }
+    
+     if($node){
+         $nid = $node->id();
+         $show_page_title = (bool)($node->get('field_show_page_title')->getString());
+         $node_type = $node->load($nid)->getType();
+         if($node_type === 'layout_page' && !$show_page_title){
+            $variables['title']="";       
+         }
+     }    
 }
 
 /**
