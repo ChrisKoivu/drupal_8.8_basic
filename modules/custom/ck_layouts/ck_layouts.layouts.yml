@@ -50,3 +50,19 @@ layout_fourcol_section:
       label: Third
     fourth:
       label: Fourth
+
+advanced_layout_3:
+  label: 'CK Three column Flex Layout'
+  path: layouts/threecol_section
+  template: layout--threecol-section
+  library: layouts/threecol_section
+  class: '\Drupal\ck_layouts\Plugin\Layout\ThreeColumnFlexLayout'
+  category: 'Columns: 3'
+  default_region: second
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third

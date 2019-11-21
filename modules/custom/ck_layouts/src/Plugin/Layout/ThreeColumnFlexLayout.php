@@ -16,7 +16,7 @@ class ThreeColumnFlexLayout extends MultiWidthLayoutBase {
   protected function getWidthOptions() {
     return [
       // outer wrapper css class is key of array, value is label for config form
-      '25-50-25' => 'small-3/small-6/small-3',
+      'small-3 small-6 small-3' => 'small-3/small-6/small-3',
       '33-34-33' => '33%/34%/33%',
       '25-25-50' => '25%/25%/50%',
       '50-25-25' => '50%/25%/25%',
